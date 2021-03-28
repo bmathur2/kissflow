@@ -1,0 +1,121 @@
+// Icon & Text
+// ======================================
+
+.text-icon {
+
+  &.section--stacked--top {
+
+    & ~ .text-icon.section--stacked--bottom {
+      margin-top: $gutter-width * -4;
+
+      .text-icon__list {
+        margin-top: -1px;
+      }
+    }
+  }
+
+  & ~ .text-icon.section--stacked--top {
+    margin-top: $gutter-width * -2;
+  }
+
+  .section__headings {
+    margin: 0 0 $gutter-width * 2;
+  }
+}
+
+.text-icon__container {
+  @include make-container;
+
+  .text-icon.section-height__medium & {
+    padding-top: $gutter-width * 1.75;
+    padding-bottom: $gutter-width * 1.75;
+  }
+}
+
+.text-icon__list {
+  @include make-row(false);
+  @include justify-content(center);
+}
+
+.text-icon__list-item {
+  @include screen-tablet-only {
+
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(6),
+    &:nth-child(8),
+    &:nth-child(10),
+    &:nth-child(12) {
+      border-right: $interface__border;
+    }
+
+    @for $i from 3 to 13 {
+
+      &:nth-child(#{$i}) {
+        border-top: 0;
+      }
+    }
+  }
+  @include screen-md-min {
+    @include make-col(6);
+
+    border-right: 0;
+  }
+  @include screen-lg-min {
+    @include make-col(4);
+
+    &:nth-child(3),
+    &:nth-child(6),
+    &:nth-child(9),
+    &:nth-child(12) {
+      border-right: $interface__border;
+    }
+
+    @for $i from 4 to 13 {
+
+      &:nth-child(#{$i}) {
+        border-top: 0;
+      }
+    }
+  }
+  @include screen-sm-max {
+    border-bottom: 0;
+  }
+  @include make-col(12);
+
+  padding-top: $gutter-width;
+  padding-bottom: $gutter-width;
+  border: $interface__border;
+  background: $interface__background-color;
+  text-align: center;
+
+  &:last-child {
+    border-right: $interface__border;
+    border-bottom: $interface__border;
+  }
+
+  h3 {
+    @include screen-md-min {
+      font-size: 1.5rem;
+    }
+
+    margin-bottom: $gutter-width / 2;
+    font-family: $body__font-family;
+    font-size: 1.125rem;
+  }
+
+  p {
+    @include screen-md-min {
+      padding-right: $gutter-width;
+      padding-left: $gutter-width;
+    }
+
+    margin-bottom: 0;
+  }
+
+  .fa {
+    margin: 0 0 $gutter-width;
+    color: $accent__color;
+    font-size: 2.5rem;
+  }
+}

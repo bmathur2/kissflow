@@ -1,0 +1,702 @@
+{
+  "info": {
+    "name": "Vogue",
+    "author": "Thinkific",
+    "version": "1.18.1",
+    "documentation_url": "https://help.thinkific.com/",
+    "support_url": "https://support.thinkific.com/"
+  },
+  "settings": [
+    {
+      "label": "Colors",
+      "settings": [
+        {
+          "type": "header",
+          "label": "Header & footer"
+        },
+        {
+          "type": "color",
+          "id": "menu_background_color",
+          "label": "Background",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "menu_link_color",
+          "label": "Link",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "menu_floating_link_color",
+          "label": "Transparent header menu link",
+          "default": "#000000"
+        },
+        {
+          "type": "header",
+          "label": "Background"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Page (Primary)",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "background_color_2",
+          "label": "Page (Secondary)",
+          "default": "#f7f7f7"
+        },
+        {
+          "type": "color",
+          "id": "card_background_color",
+          "label": "Box",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "card_background_hover_color",
+          "label": "Box (Hover)",
+          "default": "#ffffff"
+        },
+        {
+          "type": "header",
+          "label": "Text & links"
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Headings",
+          "default": "#4a4a4a"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Body",
+          "default": "#4a4a4a"
+        },
+        {
+          "type": "color",
+          "id": "link_color",
+          "label": "Link",
+          "default": "#e4ba16"
+        },
+        {
+          "type": "header",
+          "label": "Primary button"
+        },
+        {
+          "type": "color",
+          "id": "primary_button_background_color",
+          "label": "Background",
+          "default": "#e4ba16"
+        },
+        {
+          "type": "color",
+          "id": "primary_button_text_color",
+          "label": "Text",
+          "default": "#ffffff"
+        },
+        {
+          "type": "radio",
+          "id": "primary_button_style",
+          "label": "Style",
+          "default": "solid",
+          "options": [
+            {
+              "value": "solid",
+              "label": "Solid"
+            },
+            {
+              "value": "outline",
+              "label": "Outline"
+            },
+            {
+              "value": "outline_with_fill",
+              "label": "Outline (fill on hover)"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "label": "Secondary button"
+        },
+        {
+          "type": "color",
+          "id": "secondary_button_background_color",
+          "label": "Secondary background",
+          "default": "#e4ba16"
+        },
+        {
+          "type": "color",
+          "id": "secondary_button_text_color",
+          "label": "Secondary text",
+          "default": "#e4ba16"
+        },
+        {
+          "type": "radio",
+          "id": "secondary_button_style",
+          "label": "Style",
+          "default": "outline_with_fill",
+          "options": [
+            {
+              "value": "solid",
+              "label": "Solid"
+            },
+            {
+              "value": "outline",
+              "label": "Outline"
+            },
+            {
+              "value": "outline_with_fill",
+              "label": "Outline (fill on hover)"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "label": "Accent"
+        },
+        {
+          "type": "color",
+          "id": "accent_color",
+          "label": "Primary",
+          "default": "#e4ba16"
+        },
+        {
+          "type": "color",
+          "id": "accent_color_2",
+          "label": "Secondary",
+          "default": "#e4ba16"
+        }
+      ]
+    },
+    {
+      "label": "Typography",
+      "settings": [
+        {
+          "type": "select",
+          "id": "root_font_size",
+          "label": "Base font size - all text will scale accordingly",
+          "default": "16px",
+          "options": [
+            {
+              "value": "14px",
+              "label": "14px - small"
+            },
+            {
+              "value": "16px",
+              "label": "16px - recommended"
+            },
+            {
+              "value": "18px",
+              "label": "18px - large"
+            },
+            {
+              "value": "20px",
+              "label": "20px - extra large"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "banner_font",
+          "label": "Banner font",
+          "default": "GraphikRegular",
+          "options": [
+            {
+              "value": "Droid Serif",
+              "label": "Droid Serif",
+              "group": "Serif"
+            },
+            {
+              "value": "Lato",
+              "label": "Lato",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Montserrat",
+              "label": "Montserrat",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Open Sans",
+              "label": "Open Sans",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Playfair Display",
+              "label": "Playfair Display",
+              "group": "Serif"
+            },
+            {
+              "value": "Raleway",
+              "label": "Raleway",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Roboto Slab",
+              "label": "Roboto Slab",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "GraphikRegular",
+              "label": "GraphikRegular",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "GraphikMedium",
+              "label": "GraphikMedium",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "GraphikSemibold",
+              "label": "GraphikSemibold",
+              "group": "Sans-serif"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "banner_weight",
+          "label": "Banner weight",
+          "default": "100",
+          "options": [
+            {
+              "value": "100",
+              "label": "Thin"
+            },
+            {
+              "value": "300",
+              "label": "Light"
+            },
+            {
+              "value": "400",
+              "label": "Regular"
+            },
+            {
+              "value": "500",
+              "label": "Medium"
+            },
+            {
+              "value": "600",
+              "label": "Semi-bold"
+            },
+            {
+              "value": "700",
+              "label": "Bold"
+            },
+            {
+              "value": "900",
+              "label": "Black"
+            },
+            {
+              "value": "GraphikRegular",
+              "label": "GraphikRegular",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "GraphikMedium",
+              "label": "GraphikMedium",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "GraphikSemibold",
+              "label": "GraphikSemibold",
+              "group": "Sans-serif"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "heading_font",
+          "label": "Heading font",
+          "default": "GraphikRegular",
+          "options": [
+            {
+              "value": "Droid Serif",
+              "label": "Droid Serif",
+              "group": "Serif"
+            },
+            {
+              "value": "Lato",
+              "label": "Lato",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Montserrat",
+              "label": "Montserrat",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Open Sans",
+              "label": "Open Sans",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Playfair Display",
+              "label": "Playfair Display",
+              "group": "Serif"
+            },
+            {
+              "value": "Raleway",
+              "label": "Raleway",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Roboto Slab",
+              "label": "Roboto Slab",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "GraphikRegular",
+              "label": "GraphikRegular",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "GraphikMedium",
+              "label": "GraphikMedium",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "GraphikSemibold",
+              "label": "GraphikSemibold",
+              "group": "Sans-serif"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "heading_weight",
+          "label": "Heading weight",
+          "default": "100",
+          "options": [
+            {
+              "value": "100",
+              "label": "Thin"
+            },
+            {
+              "value": "300",
+              "label": "Light"
+            },
+            {
+              "value": "400",
+              "label": "Regular"
+            },
+            {
+              "value": "500",
+              "label": "Medium"
+            },
+            {
+              "value": "600",
+              "label": "Semi-bold"
+            },
+            {
+              "value": "700",
+              "label": "Bold"
+            },
+            {
+              "value": "900",
+              "label": "Black"
+            },
+            {
+              "value": "GraphikRegular",
+              "label": "GraphikRegular",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "GraphikMedium",
+              "label": "GraphikMedium",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "GraphikSemibold",
+              "label": "GraphikSemibold",
+              "group": "Sans-serif"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "subheading_font",
+          "label": "Subheading font",
+          "default": "Open Sans",
+          "options": [
+            {
+              "value": "Droid Serif",
+              "label": "Droid Serif",
+              "group": "Serif"
+            },
+            {
+              "value": "Lato",
+              "label": "Lato",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Montserrat",
+              "label": "Montserrat",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Open Sans",
+              "label": "Open Sans",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Raleway",
+              "label": "Raleway",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Roboto",
+              "label": "Roboto",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Source Sans",
+              "label": "Source Sans",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "GraphikRegular",
+              "label": "GraphikRegular",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "GraphikMedium",
+              "label": "GraphikMedium",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "GraphikSemibold",
+              "label": "GraphikSemibold",
+              "group": "Sans-serif"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "subheading_weight",
+          "label": "Subheading weight",
+          "default": "300",
+          "options": [
+            {
+              "value": "100",
+              "label": "Thin"
+            },
+            {
+              "value": "300",
+              "label": "Light"
+            },
+            {
+              "value": "400",
+              "label": "Regular"
+            },
+            {
+              "value": "500",
+              "label": "Medium"
+            },
+            {
+              "value": "600",
+              "label": "Semi-bold"
+            },
+            {
+              "value": "700",
+              "label": "Bold"
+            },
+            {
+              "value": "900",
+              "label": "Black"
+            },
+            {
+              "value": "GraphikRegular",
+              "label": "GraphikRegular",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "GraphikMedium",
+              "label": "GraphikMedium",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "GraphikSemibold",
+              "label": "GraphikSemibold",
+              "group": "Sans-serif"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "body_font",
+          "label": "Body font",
+          "default": "Open Sans",
+          "options": [
+            {
+              "value": "Abel",
+              "label": "Abel",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Lato",
+              "label": "Lato",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Montserrat",
+              "label": "Montserrat",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Open Sans",
+              "label": "Open Sans",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Raleway",
+              "label": "Raleway",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Roboto",
+              "label": "Roboto",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "Source Sans",
+              "label": "Source Sans",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "GraphikRegular",
+              "label": "GraphikRegular",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "GraphikMedium",
+              "label": "GraphikMedium",
+              "group": "Sans-serif"
+            },
+            {
+              "value": "GraphikSemibold",
+              "label": "GraphikSemibold",
+              "group": "Sans-serif"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Favicon",
+      "settings": [
+        {
+          "type": "image",
+          "id": "favicon",
+          "label": "Image",
+          "default": "https://cdn.thinkific.com/51/20180809/f1a1de9d3260c96d3a81ee781bc9808e.ico"
+        }
+      ]
+    }
+  ],
+  "presets": {
+    "manhattan": {
+      "title": "Manhattan",
+      "description": "",
+      "settings": {
+        "menu_background_color": "#000000",
+        "menu_link_color": "#ffffff",
+        "menu_floating_link_color": "#000000",
+        "background_color": "#ffffff",
+        "background_color_2": "#f7f7f7",
+        "card_background_color": "#ffffff",
+        "card_background_hover_color": "#ffffff",
+        "heading_color": "#4a4a4a",
+        "text_color": "#4a4a4a",
+        "link_color": "#e4ba16",
+        "primary_button_background_color": "#e4ba16",
+        "primary_button_text_color": "#ffffff",
+        "primary_button_style": "solid",
+        "secondary_button_background_color": "#e4ba16",
+        "secondary_button_text_color": "#e4ba16",
+        "secondary_button_style": "outline_with_fill",
+        "accent_color": "#e4ba16",
+        "accent_color_2": "#e4ba16",
+        "root_font_size": "16px",
+        "banner_font": "Raleway",
+        "banner_weight": "100",
+        "heading_font": "Raleway",
+        "heading_weight": "100",
+        "subheading_font": "Open Sans",
+        "subheading_weight": "300",
+        "body_font": "Open Sans",
+        "favicon": "https://cdn.thinkific.com/51/20180809/f1a1de9d3260c96d3a81ee781bc9808e.ico"
+      }
+    },
+    "classic": {
+      "title": "Classic",
+      "description": "",
+      "settings": {
+        "menu_background_color": "#ffffff",
+        "menu_link_color": "#1e242a",
+        "menu_floating_link_color": "#000000",
+        "background_color": "#ffffff",
+        "background_color_2": "#f7f7f7",
+        "card_background_color": "#ffffff",
+        "card_background_hover_color": "#ffffff",
+        "heading_color": "#1e242a",
+        "text_color": "#505050",
+        "link_color": "#dea986",
+        "primary_button_background_color": "#dea986",
+        "primary_button_text_color": "#ffffff",
+        "primary_button_style": "solid",
+        "secondary_button_background_color": "#dea986",
+        "secondary_button_text_color": "#dea986",
+        "secondary_button_style": "outline_with_fill",
+        "accent_color": "#dea986",
+        "accent_color_2": "#1e242a",
+        "root_font_size": "16px",
+        "banner_font": "Droid Serif",
+        "banner_weight": "400",
+        "heading_font": "Droid Serif",
+        "heading_weight": "400",
+        "subheading_font": "Lato",
+        "subheading_weight": "400",
+        "body_font": "Lato",
+        "favicon": "https://cdn.thinkific.com/51/20180809/f1a1de9d3260c96d3a81ee781bc9808e.ico"
+      }
+    },
+    "parker": {
+      "title": "Parker",
+      "description": "",
+      "settings": {
+        "menu_background_color": "#ffffff",
+        "menu_link_color": "#000000",
+        "menu_floating_link_color": "#000000",
+        "background_color": "#ffffff",
+        "background_color_2": "#f7f7f7",
+        "card_background_color": "#ffffff",
+        "card_background_hover_color": "#ffffff",
+        "heading_color": "#9b9aaa",
+        "text_color": "#9b9aaa",
+        "link_color": "#97ccb2",
+        "primary_button_background_color": "#97ccb2",
+        "primary_button_text_color": "#ffffff",
+        "primary_button_style": "solid",
+        "secondary_button_background_color": "#97ccb2",
+        "secondary_button_text_color": "#97ccb2",
+        "secondary_button_style": "outline_with_fill",
+        "accent_color": "#97ccb2",
+        "accent_color_2": "#97ccb2",
+        "root_font_size": "16px",
+        "banner_font": "Playfair Display",
+        "banner_weight": "400",
+        "heading_font": "Playfair Display",
+        "heading_weight": "400",
+        "subheading_font": "Source Sans",
+        "subheading_weight": "400",
+        "body_font": "Source Sans",
+        "favicon": "https://cdn.thinkific.com/51/20180809/f1a1de9d3260c96d3a81ee781bc9808e.ico"
+      }
+    }
+  }
+}

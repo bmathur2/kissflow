@@ -1,0 +1,42 @@
+.section-brand {
+  border-top: 1px solid #d5dce1;
+  padding: 0;
+  border-bottom: 1px solid #d5dce1;
+}
+
+.section-brand .brand-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 20px;
+}
+
+.section-brand .brand-logo ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-brand .brand-logo ul li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: block;
+}
+
+.section-brand .brand-logo ul li img {
+  width: 180px;
+  height: 48px;
+  display: block;
+}
+/*# sourceMappingURL=section-brand.css.map */

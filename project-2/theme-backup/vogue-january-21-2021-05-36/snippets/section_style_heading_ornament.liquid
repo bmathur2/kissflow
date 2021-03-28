@@ -1,0 +1,21 @@
+{% if section.settings.heading_alignment == "center" or section.settings.content_alignment == "center" %}
+  .section__heading-ornament {
+
+    &:before {
+      @include transform(translatex(-50%));
+
+      left: 50%;
+    }
+  }
+{% endif %}
+
+{% if section.settings.heading_alignment == "right" or section.settings.content_alignment == "right" %}
+  .section__heading-ornament {
+
+    &:before {
+      @include transform(translatex(-100%));
+
+      left: 100%;
+    }
+  }
+{% endif %}

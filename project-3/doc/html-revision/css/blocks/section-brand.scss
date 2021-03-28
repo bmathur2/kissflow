@@ -1,0 +1,29 @@
+.section-brand {
+    border-top: 1px solid #d5dce1;
+    padding: 0;
+    border-bottom: 1px solid #d5dce1;
+    .brand-logo {
+        display: flex;
+        align-items: center;
+        padding: 40px 20px;
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            li {
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+                display: block;
+                img {
+                    width: 180px;
+                    height: 48px;
+                    display: block;
+                }
+            }
+        }
+    }
+}

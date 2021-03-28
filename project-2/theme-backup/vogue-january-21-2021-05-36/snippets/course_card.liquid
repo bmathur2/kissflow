@@ -1,0 +1,50 @@
+{% comment %}
+  This is the card representation of your course.
+{% endcomment %}
+
+<a class="course-card course-card__public {{ course.status }}" href="{{ course.links.landing_page_url }}" aria-label="{{ course.name }}">
+  {% if course.image.medium != blank %}
+    {% assign product_image = course.image.medium %}
+  {% else %}
+    {% assign product_image = course.image.original %}
+  {% endif %}
+  {% if course.is_presell %}
+    <div class="course-card__header-banner">
+      {{ 'liquid.partials.course_card.presell_banner_text' | translate }}
+    </div>
+  {% endif %}
+  <div>
+    <img
+      src="{{ product_image }}"
+      alt=""
+      class="course-card__img-container"
+      loading="lazy"
+    />
+  </div>
+  <div class="course-card__body">
+    {% if course.is_public %}
+      <div class="course-card__price">
+        {{ course.display_price }}
+      </div>
+    {% endif %}
+    <h3>{{ course.name }}</h3>
+    <p>{{ course.description | truncate: 250 }}</p>
+    {% if course.reviews_enabled and course.reviews.approved_count > 0 %}
+      <span class="review__stars">
+        {% assign rating = course.reviews.average_rating | ceil %}
+        {% for index in (1..rating) %}
+          {% include 'star' %}
+        {% endfor %}
+      </span>
+      <span class="sr-only">
+        ({{ course.reviews.approved_count }}) {{ course.reviews.average_rating }} {{ 'liquid.partials.course_review.average_rating' | translate }}
+      </span>
+    {% endif %}
+  </div>
+  {% if course.chapters.size != empty OR course.lesson_hours != empty %}
+    <footer class="course-card__details">
+      {% if course.chapters.size != blank %}<span class="course-card__lesson-count"><strong>{{ course.lesson_count }}</strong> {{ 'liquid.partials.course_card.details_lessons' | translate }}</span>{% endif %}
+      {% if course.lesson_hours != blank %}<span class="course-card__lesson-time">{{ course.lesson_hours }}</span>{% endif %}
+    </footer>
+  {% endif %}
+</a>

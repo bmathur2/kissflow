@@ -1,0 +1,39 @@
+// Gallery
+// ======================================
+
+.gallery {
+
+  .section__content {
+    @include make-col(12);
+  }
+}
+
+.gallery__wrapper {
+  @include make-row;
+}
+
+.gallery__list {
+  @include make-row;
+}
+
+.gallery__list-item {
+  @include screen-lg-min {
+    &.gallery__list-item-count-2 {
+      @include make-col(6);
+      padding: 0;
+    }
+
+    &.gallery__list-item-count-3 {
+      @include make-col(4);
+      padding: 0;
+    }
+  }
+  @include make-col(12);
+  padding: 0;
+
+  img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+  }
+}

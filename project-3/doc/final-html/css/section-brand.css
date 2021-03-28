@@ -1,0 +1,108 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+/*Small devices (landscape phones, 576px and up)*/
+/*Medium devices (tablets, 768px and up)*/
+/*Large devices (desktops, 992px and up)*/
+/*Extra large devices (large desktops, 1200px and up)*/
+/** KF3.0 Defined Variables **/
+/** KF3.0 Font sizes **/
+/**kf line-height*/
+/* Spacing units*/
+/*--color--*/
+/*-----------------------------------*/
+.section-brand {
+  border-top: 1px solid #ebeef1;
+  padding: 0;
+  border-bottom: 1px solid #ebeef1;
+}
+
+.section-brand .brand-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 0px;
+}
+
+.section-brand .brand-logo ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-brand .brand-logo ul li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: block;
+}
+
+.section-brand .brand-logo ul li img {
+  max-width: 180px;
+  height: auto;
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 1920px) {
+  .section-brand {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-brand {
+    padding: 0px 0;
+  }
+  .section-brand .brand-logo {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .section-brand .brand-logo ul {
+    display: block;
+  }
+  .section-brand .brand-logo ul li {
+    text-align: center;
+    width: 32%;
+    display: inline-block;
+  }
+  .section-brand .brand-logo ul li img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-brand {
+    padding: 20px 0;
+  }
+  .section-brand .brand-logo {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .section-brand .brand-logo ul {
+    display: block;
+  }
+  .section-brand .brand-logo ul li {
+    text-align: center;
+    width: 49%;
+    display: inline-block;
+  }
+  .section-brand .brand-logo ul li img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=section-brand.css.map */

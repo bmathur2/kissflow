@@ -1,0 +1,110 @@
+// Banner Bundle
+// ======================================
+
+.banner-bundle {
+  @include screen-lg-min {
+    @include display(flex);
+    @include align-items(center);
+  }
+
+  .section__content {
+    @include screen-md-min {
+      @include make-col(10);
+    }
+    @include screen-lg-min {
+      @include make-col(8);
+    }
+    @include make-col(12);
+  }
+
+
+  &.section--has-free-trial {
+
+    .section__content {
+      @include screen-tablet-only {
+        @include make-col(12, false);
+      }
+    }
+
+    .section__video {
+      @include screen-tablet-only {
+        @include make-col(12, false);
+      }
+    }
+
+    .bundle-action-buttons--has-additional-prices {
+       @include screen-sm-max {
+        .button,
+        .form__control.bundle-action-buttons__additional-prices {
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+
+  .section__headings {
+    margin: 0;
+  }
+
+  .section__heading {
+    @include screen-md-min {
+      font-size: modular-scale(4);
+    }
+    @include screen-lg-min {
+      font-size: modular-scale(5);
+    }
+    @include screen-xl-min {
+      font-size: 5.5rem;
+    }
+
+    font-family: $banner__font-family;
+    font-size: 3.125rem;
+    font-weight: $banner__font-weight;
+    line-height: 1.2;
+  }
+
+  .section__subheading {
+    @include screen-xl-min {
+      font-size: modular-scale(2);
+    }
+    font-family: $subheading__font-family;
+    font-size: 1.625rem;
+    font-weight: $subheading__font-weight;
+  }
+
+  .section__button-group {
+    @include button-group;
+    @include screen-xl-min {
+      @include flex-wrap(nowrap);
+    }
+
+    padding-top: $gutter-width;
+
+    .bundle-action-buttons__purchase {
+
+      &:only-child {
+        width: 100%;
+      }
+    }
+
+    .button {
+      @include screen-xs-max {
+        margin-bottom: 1rem;
+      }
+
+      &-free-trial {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.banner__container {
+  @include make-container;
+}
+
+.banner__wrapper {
+  @include make-row(true);
+
+  position: relative;
+}

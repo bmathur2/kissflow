@@ -1,0 +1,15 @@
+Desktop
+https://app.zeplin.io/project/5c7886c7ac7f4162680aec58/screen/602aace29018077e8e567964
+Mobile  
+https://app.zeplin.io/project/5c7886c7ac7f4162680aec58/screen/602b882294fc6443254f9c0c
+
+
+You will be given the page design which contains 5 to 6 sections which you will need to create (ignore header and footer). We will share the base style.scss / style.css with you where you have to inherit things.
+
+You should only use bootstrap v4.3.1 and its classes/features which we have already included in our base style guide.
+
+Some sections might require JS skills to manipulate DOM. utilize bootstrap components like accordion, tabs, dropdown, etc.,.
+
+The output HTML content is going to be converted into PHP, so keep that in mind while adding repeated contents like the carousel.
+
+Screens Resolution, browsers list, and the sample section attached in the files

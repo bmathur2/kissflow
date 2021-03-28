@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,0DAA0D;AAE1D,kDAAkD;AAElD,0CAA0C;AAE1C,0CAA0C;AAE1C,uDAAuD;AAUvD,+BAA+B;AAE/B,wBAAwB;AAaxB,mBAAmB;AAWnB,kBAAkB",
+    "sources": [
+        "variables-basefile.scss"
+    ],
+    "names": [],
+    "file": "variables-basefile.css"
+}

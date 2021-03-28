@@ -1,0 +1,67 @@
+// Dashboard
+// ======================================
+
+.student-dashboard {
+  background-color: $body__background-color-2;
+}
+
+.student-dashboard__container {
+  @include make-container;
+  @include page-padding;
+}
+
+.student-dashboard__banner {
+  background-color: $body__background-color;
+
+  p {
+    @include screen-md-min {
+      font-size: 1.875rem;
+      text-align: left;
+    }
+
+    margin: 0;
+    font-family: $body__font-family;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.student-dashboard__heading {
+  @include page-heading;
+}
+
+.student-dashboard__content {
+  h1 {
+    @include screen-sm-max {
+      font-size: 2.5rem;
+    }
+
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+}
+
+.student-dashboard__form {
+  a {
+    text-decoration: none;
+  }
+
+  .form__group {
+    @include justify-content(space-between);
+
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .form__select-no-label {
+    @include flex-grow(0);
+
+    .form__control {
+      border: 0;
+      background-color: transparent;
+      direction: rtl;
+    }
+  }
+}

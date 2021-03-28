@@ -1,0 +1,54 @@
+// Call To Action
+// ======================================
+
+.call-to-action {
+
+  .section__headings {
+    margin: 0;
+  }
+
+  .section__content {
+    @include screen-md-min {
+      @include make-col(10);
+    }
+    @include make-col(12);
+  }
+
+  .section__button-group {
+    @include button-group;
+
+    padding-top: $gutter-width / 1.33333;
+    text-align: inherit;
+
+    .button {
+      @include screen-sm-max {
+        margin-bottom: $gutter-width / 2;
+      }
+    }
+  }
+}
+
+.call-to-action__container {
+  @include make-container;
+}
+
+.call-to-action__wrapper {
+  @include make-row;
+}
+
+.call-to-action__section-link {
+  display: block;
+  text-decoration: none;
+
+  .section-height__large & {
+    @include section-height(section-height-preset(large));
+  }
+
+  .section-height__medium & {
+    @include section-height(section-height-preset(medium));
+  }
+
+  .section-height__small & {
+    @include section-height(section-height-preset(small));
+  }
+}

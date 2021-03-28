@@ -1,0 +1,123 @@
+// Instructor(s)
+// ======================================
+
+.instructor {
+  overflow: hidden;
+
+  .owl-carousel {
+
+    .owl-item {
+
+      img {
+        display: inline-block;
+        width: auto;
+      }
+    }
+  }
+}
+
+.instructor__container {
+  @include make-container;
+}
+
+.instructor__list {
+  @include screen-md-min {
+    @include make-col(10);
+  }
+  @include screen-lg-min {
+    @include make-col(9);
+  }
+
+  margin: 0 auto;
+
+  &.owl-carousel {
+    .owl-item {
+      @include screen-sm-min {
+        padding: 0 $gutter-width * 1.5;
+      }
+      @include screen-md-min {
+        padding: 0 $gutter-width * 2;
+      }
+      padding: 0 $gutter-width;
+
+      .instructor__avatar {
+        @include screen-md-min {
+          width: 250px;
+          height: 250px;
+        }
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    .owl-nav {
+
+      .owl-prev,
+      .owl-next {
+
+        button {
+          padding: 0;
+          border: 0;
+          background-color: transparent;
+          opacity: 0.4;
+
+          &:active,
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.instructor__profile {
+  header {
+    margin: 0 0 $gutter-width;
+    text-align: center;
+  }
+}
+
+.instructor__avatar {
+  margin: 0 auto $gutter-width / 2;
+  border-radius: 50%;
+}
+
+.instructor__name,
+.instructor__title {
+  font-family: $body__font-family;
+  font-size: modular-scale(1);
+  text-align: center;
+}
+
+.instructor__name {
+  @include screen-md-min {
+    font-size: 1.25rem;
+  }
+
+  margin: 0 0 $gutter-width / 4;
+  font-size: 1.125rem;
+}
+
+.instructor__title {
+  @include screen-md-min {
+    font-size: 1rem;
+  }
+
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.instructor__bio {
+  text-align: center;
+}
+
+.instructor__email {
+  text-decoration: none;
+
+  .fa {
+    margin-right: $gutter-width / 4;
+  }
+}

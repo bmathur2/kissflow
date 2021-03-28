@@ -1,0 +1,61 @@
+<div class="collapse navbar-collapse">
+  <ul class="navbar-nav courses-toggle">
+    <li class="hide-menu"><a title="All products" href="#" class="dropdown-toggle">All products</a>
+      <ul class="all-product-dropdown dropdown-menu mega-dropdown-menu shade3">
+        <li> <a class="media" href="#"> <img src="images/kflogo_icon.svg" width="38" height="38" alt="Kissflow Icon">
+          <div class="media-body"> <span class="prod-title"> Process Automation</span> <span class="d-none d-md-block tagline">All your work on one platform</span> </div>
+          </a> </li>
+        <li> <a class="media" href="#"> <img src="images/hr.svg" width="30" height="30" alt="Icon">
+          <div class="media-body"> <span class="prod-title">Account administrator</span> <span class="d-none d-md-block tagline">Hire to retire in one solution</span> </div>
+          </a> </li>
+        <li> <a class="media" href="#"> <img src="images/process.svg" width="30" height="30" alt="Icon">
+          <div class="media-body"> <span class="prod-title">User Settings</span> <span class="d-none d-md-block tagline">Digitize your school processes</span> </div>
+          </a> </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<style>
+.navbar-expand-md .navbar-collapse { display: flex!important; flex-basis: auto; }
+.navbar-nav { display: flex; flex-direction: column; padding-left: 0; margin-bottom: 0; list-style: none;position: relative; }
+.navbar .navbar-nav li { font-size: 18px; }
+.primary-navbar .nav-link { color: #1d2b36!important; padding: 0!important; display: block; }
+.dropdown-toggle { white-space: nowrap; }
+.dropdown-menu { position: absolute; top: 100%; left: 0; z-index: 1000; display: none; float: left; min-width: 10rem;  padding: .5rem 0;
+ margin: .125rem 0 0;
+font-size: 1rem; color: #212529; text-align: left; list-style: none; background-color: #fff; background-clip: padding-box; border: 1px solid rgba(0,0,0,.15);  border-radius: .25rem;
+min-width: 250px; }
+.media { display: flex; align-items: flex-start; color: #1d2b36!important; padding: 1.6rem; }
+.media .media-body { flex: 1; margin-left: 8px; width: auto; }
+.prod-title { font-family: GraphikMedium, Helvetica, sans-serif; }
+.kissflow-navbar .tagline, .product-navbar .tagline { font-family: GraphikRegular, Helvetica, sans-serif; font-size: 1rem; }
+header .tagline, nav .tagline { color: #748494; }
+.hide-menu .dropdown-menu { display: none; }
+.show-menu .dropdown-menu { display: block; top: 20px; }
+
+</style>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".courses-toggle").click(function(){
+       $(".hide-menu").toggleClass("show-menu");
+    });
+});
+
+
+const $menu = $('.dropdown');
+
+$(document).mouseup(e => {
+   if (!$menu.is(e.target) // if the target of the click isn't the container...
+   && $menu.has(e.target).length === 0) // ... nor a descendant of the container
+   {
+     $menu.removeClass('is-active');
+  }
+ });
+
+$('.toggle').on('click', () => {
+  $menu.toggleClass('is-active');
+});
+
+
+</script>

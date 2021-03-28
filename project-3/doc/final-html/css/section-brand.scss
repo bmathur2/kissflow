@@ -1,0 +1,83 @@
+@import "variables-basefile.scss";
+@import "variables.scss";
+.section-brand {
+    border-top: 1px solid $kfborcolor;
+    padding: 0;
+    border-bottom: 1px solid $kfborcolor;
+    .brand-logo {
+        display: flex;
+        align-items: center;
+        padding:25px 0px;
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            li {
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+                display: block;
+                img {
+                    max-width: 180px;
+                    height: auto;
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: $widescreen) {
+    .section-brand {
+        padding:10px 0; 
+    }
+}
+@media (max-width: $large) {
+    .section-brand {
+        padding:0px 0;
+       .brand-logo {
+        width:100%;
+        margin: 0 auto;
+        padding: 0px;
+         ul {
+            display: block;
+            li {
+                text-align: center;
+                width: 32%;
+                display: inline-block;
+                img {
+                    margin: 0 auto;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        }
+    }
+}
+@media (max-width: $mobile) {
+    .section-brand {
+        padding: 20px 0;
+       .brand-logo {
+        width:100%;
+        margin: 0 auto;
+        padding: 0px;
+         ul {
+            display: block;
+            li {
+                text-align: center;
+                width: 49%;
+                display: inline-block;
+                img {
+                    margin: 0 auto;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        }
+    }
+}

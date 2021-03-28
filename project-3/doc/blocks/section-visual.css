@@ -1,0 +1,35 @@
+.section-visual {
+  margin: 40px 0 0px 0;
+  padding: 40px 0 0px 0;
+  display: block;
+}
+
+.section-visual .visual-infograph {
+  width: 750px;
+  padding: 0;
+}
+
+.section-visual .visual-infograph img {
+  -webkit-box-shadow: 19px 34px 48px -3px rgba(247, 223, 245, 0.46);
+          box-shadow: 19px 34px 48px -3px rgba(247, 223, 245, 0.46);
+}
+
+.section-visual .visual-info {
+  display: block;
+  text-align: left;
+  padding: 0px 40px;
+}
+
+.section-visual .visual-info h3 {
+  font-size: 40px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: -1.08px;
+  font-family: 'GraphikSemibold';
+  font-weight: 700;
+  margin-top: 75px;
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=section-visual.css.map */

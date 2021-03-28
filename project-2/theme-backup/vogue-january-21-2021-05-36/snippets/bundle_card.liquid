@@ -1,0 +1,33 @@
+{% comment %}
+  This is the card representation of your bundle.
+{% endcomment %}
+
+<a class="course-card course-card__public {{ bundle.status }}" href="{{ bundle.links.landing_page_url }}">
+  {% if bundle.image.medium != blank %}
+    {% assign product_image = bundle.image.medium %}
+  {% else %}
+    {% assign product_image = bundle.image.original %}
+  {% endif %}
+  <header>
+    <img
+      src="{{ product_image }}"
+      alt=""
+      class="course-card__img-container"
+      loading="lazy"
+    />
+  </header>
+  <div class="course-card__body">
+    {% if bundle.is_public %}
+      <div class="course-card__price">
+        {{ bundle.display_price }}
+      </div>
+    {% endif %}
+    <h3>{{ bundle.name }}</h3>
+    <p>{{ bundle.description | truncate: 250 }}</p>
+  </div>
+  {% if bundle.courses.size %}
+    <footer class="course-card__details">
+      {% if bundle.courses.size != blank %}<span class="course-card__lesson-count"><strong>{{ bundle.courses.size }}</strong> {{ 'liquid.partials.bundle_card.details_courses' | translate }}</span>{% endif %}
+    </footer>
+  {% endif %}
+</a>

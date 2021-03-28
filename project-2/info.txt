@@ -1,0 +1,79 @@
+https://www.upwork.com/jobs/~01d023ee728a38df21/
+
+https://kissflowacademy.thinkific.com/manage/custom_site_themes/355165/edit
+
+https://kissflowacademy.thinkific.com/
+sm428552@gmail.com / Upw0rk123@
+
+Home Page  - done
+https://www.figma.com/file/qYgJsiRJ7HRc6p1F97qcNS/KissFlow-Academy?node-id=2%3A132
+
+All Courses - done
+https://www.figma.com/file/FkTwYVEkrRyEruZ4pi0wxi/KissFlow-Academy?node-id=180%3A0
+https://www.figma.com/file/6Mvq1b08i3AVSLoMLc7Jvu/KissFlow-Academy-(2)?node-id=2%3A132
+
+Course details page - Done
+https://www.figma.com/file/6Mvq1b08i3AVSLoMLc7Jvu/KissFlow-Academy-(2)?node-id=203%3A65
+
+Sign-in page - Done
+https://www.figma.com/file/6Mvq1b08i3AVSLoMLc7Jvu/KissFlow-Academy-(2)?node-id=180%3A0
+
+https://kissflowacademy.thinkific.com/pages/homedev/
+
+
+
+
+
+img tag
+
+<img src="{{ 'cute-golden-retriever-happy-puppies.png' | theme_asset_url }}">
+
+
+{{ 'ASSET NAME' | theme_asset_url }}
+
+<link rel="stylesheet" type="text/css" href="{{ 'ASSET NAME' | theme_asset_url }}">
+
+<link rel="stylesheet" type="text/css" href="{{ 'thinkific.css' | theme_asset_url }}">
+
+https://developers.thinkific.com/themes/using-assets-in-themes/
+
+
+home_banner
+featured_courses
+featured_bundles
+
+
+
+Kissflow Academy
+Learning Made Simple
+
+Learn Online Through Our Amazing Mastery Courses
+
+
+https://kissflowacademy.thinkific.com/pages/homedev
+https://kissflowacademy.thinkific.com/users/sign_in
+https://kissflowacademy.thinkific.com/collections
+https://kissflowacademy.thinkific.com/courses/user-profile
+
+Digital Workplace Collaboration
+All-round collaboration with chat, teams and channels.
+
+
+
+
+
+
+
+Pages list
+
+
+
+
+
+
+
+
+https://academy.kissflow.com/courses/workflow-automation/course_reviews/new
+
+
+<script>window.location.href = "https://academy.kissflow.com/pages/work-in-progress", target=_blank;</script>

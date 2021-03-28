@@ -1,0 +1,61 @@
+// Description
+// ======================================
+
+.description {
+  overflow: hidden;
+
+  &.section__column-layout__two-column {
+    @include screen-lg-min {
+
+      .section__content {
+        @include make-col(7);
+
+        padding-left: 0;
+      }
+    }
+
+    .section__headings {
+      @include screen-md-min {
+        padding-right: $gutter-width * 2;
+      }
+      @include screen-lg-min {
+        @include make-col(5);
+
+        padding-right: 4rem;
+      }
+    }
+  }
+
+  .section__headings {
+    @include screen-md-min {
+      @include make-col(6);
+    }
+    @include make-col(12);
+  }
+
+  .section__heading,
+  .section__subheading {
+    color: $heading__color;
+  }
+
+  .section__content {
+    @include screen-md-min {
+      @include make-col(6);
+    }
+    @include make-col(12);
+    @include align-self(center);
+  }
+
+  .section__button-group {
+    padding-top: $gutter-width;
+  }
+}
+
+.description__container {
+  @include make-container;
+  @include section-background-decoration;
+}
+
+.description__wrapper {
+  @include make-row(true);
+}

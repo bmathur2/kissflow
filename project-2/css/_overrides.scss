@@ -1,0 +1,51 @@
+@font-face {
+    font-family: GraphikRegular;
+    src: url({{ 'GraphikRegular.ttf' | theme_asset_url }});
+}
+
+@font-face {
+    font-family: GraphikMedium;
+    src: url({{ 'GraphikMedium.ttf' | theme_asset_url }});
+}
+
+@font-face {
+    font-family: GraphikSemibold;
+    src: url({{ 'GraphikSemibold.ttf' | theme_asset_url }});
+}
+
+{
+    "type": "select",
+    "id": "banner_font",
+    "label": "Banner font",
+    "default": "Raleway",
+    "options": [ {
+        "value": "Droid Serif", "label": "Droid Serif", "group": "Serif"
+    }
+    ,
+    {
+        "value": "Lato", "label": "Lato", "group": "Sans-serif"
+    }
+    ,
+    {
+        "value": "Montserrat", "label": "Montserrat", "group": "Sans-serif"
+    }
+    ,
+    {
+        "value": "Open Sans", "label": "Open Sans", "group": "Sans-serif"
+    }
+    ,
+    {
+        "value": "Playfair Display", "label": "Playfair Display", "group": "Serif"
+    }
+    ,
+    {
+        "value": "Raleway", "label": "Raleway", "group": "Sans-serif"
+    }
+    ,
+    {
+        "value": "Roboto Slab", "label": "Roboto Slab", "group": "Sans-serif"
+    }
+    ]
+}
+
+,

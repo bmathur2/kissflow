@@ -1,0 +1,29 @@
+{% comment %}
+  This is the card representation of your course categories.
+{% endcomment %}
+<a class="course-category-card" href="{{ collection.url }}" aria-label="{{ collection.name }}">
+  {% if collection.image.medium != blank %}
+    {% assign category_image = collection.image.medium %}
+  {% else %}
+    {% assign category_image = collection.image.original %}
+  {% endif %}
+  <header class="course-category-card__img-container">
+    {% if section.settings.show_category_name %}
+      <img
+        src="{{ category_image }}"
+        alt=""
+        aria-hidden="true"
+        class="course-category-card__img"
+        loading="lazy"
+      />
+      <p>{{ collection.name }}</p>
+    {% else %}
+      <img
+        src="{{ category_image }}"
+        alt="{{ collection.name }}"
+        class="course-category-card__img"
+        loading="lazy"
+      />
+    {% endif %}
+  </header>
+</a>

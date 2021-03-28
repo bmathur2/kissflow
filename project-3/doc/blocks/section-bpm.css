@@ -1,0 +1,130 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+/*Small devices (landscape phones, 576px and up)*/
+/*Medium devices (tablets, 768px and up)*/
+/*Large devices (desktops, 992px and up)*/
+/*Extra large devices (large desktops, 1200px and up)*/
+/** KF3.0 Defined Variables **/
+/** KF3.0 Font sizes **/
+/**kf line-height*/
+/* Spacing units*/
+.section-bpm {
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+
+.section-bpm .bpm-info {
+  width: 100%;
+}
+
+.section-bpm .bpm-info img {
+  width: 100%;
+}
+
+.section-bpm .bpm-desc {
+  display: block;
+  text-align: left;
+  padding: 20px 40px;
+}
+
+.section-bpm .bpm-desc h2 {
+  font-size: 40px;
+  line-height: 1.45;
+  letter-spacing: -1.08px;
+  font-family: 'GraphikSemibold';
+  font-weight: 600;
+  color: #1d2b36;
+  padding: 40px 0 0px 0;
+  margin: 0px;
+  position: relative;
+  z-index: 10000;
+}
+
+.section-bpm .bpm-desc h2:before {
+  width: 470px;
+  height: 8px;
+  background: url(../images/heading-shadow.png) bottom right no-repeat;
+  position: absolute;
+  bottom: 12px;
+  left: 0px;
+  display: block;
+  content: "";
+  z-index: -1;
+}
+
+.section-bpm .bpm-desc p {
+  font-size: 24px;
+  line-height: 1.45;
+  letter-spacing: -1.08px;
+  font-family: 'GraphikMedium';
+  font-weight: 500;
+  padding: 0px;
+  margin: 20px 0;
+  color: #f58220;
+}
+
+@media (min-width: 1024px) {
+  .section-bpm .bpm-desc {
+    padding: 30px 0;
+  }
+  .section-bpm .bpm-desc h2 {
+    font-size: 36px !important;
+  }
+  .section-bpm .bpm-desc p {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-bpm {
+    padding: 20px 0;
+    margin-bottom: 0px;
+  }
+  .section-bpm .bpm-desc {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .section-bpm .bpm-desc h2 {
+    font-size: 24px;
+  }
+  .section-bpm .bpm-desc h2:before {
+    width: 75%;
+    bottom: 6px;
+    left: 12px;
+  }
+  .section-bpm .bpm-desc p {
+    font-size: 16px;
+  }
+  .section-bpm .bpm-info {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-bpm {
+    padding: 20px 0;
+    margin-bottom: 0px;
+  }
+  .section-bpm .bpm-desc {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .section-bpm .bpm-desc h2 {
+    font-size: 24px;
+  }
+  .section-bpm .bpm-desc h2:before {
+    width: 75%;
+    bottom: 6px;
+    left: 12px;
+  }
+  .section-bpm .bpm-desc p {
+    font-size: 16px;
+  }
+  .section-bpm .bpm-info {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=section-bpm.css.map */

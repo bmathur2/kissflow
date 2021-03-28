@@ -1,0 +1,49 @@
+.section-bpm {
+    padding: 40px 0;
+    margin-bottom: 40px;
+    .bpm-info {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .bpm-desc {
+        display: block;
+        text-align: left;
+        padding: 20px 40px;
+        h2 {
+            font-size: $h2afont;
+            line-height:$h2fontlh;
+            font-family:$primarymedium;
+            letter-spacing: -1.08px;
+            font-weight: 600;
+            color: #1d2b36;
+            padding: 40px 0 0px 0;
+            margin: 0px;
+            position: relative;
+            z-index: 10000;
+            &:before {
+                width: 470px;
+                height: 8px;
+                background: url(../images/heading-shadow.png) bottom right no-repeat;
+                position: absolute;
+                bottom: 12px;
+                left: 0px;
+                display: block;
+                content: "";
+                z-index: -1;
+
+            }
+        }
+        p {
+            font-size: 24px;
+            line-height: 1.45;
+            letter-spacing: -1.08px;
+            font-family:$primarymedium;
+            font-weight: 500;
+            padding: 0px;
+            margin: 20px 0;
+            color: #f58220;
+        }
+    }
+}

@@ -1,0 +1,136 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+/*Small devices (landscape phones, 576px and up)*/
+/*Medium devices (tablets, 768px and up)*/
+/*Large devices (desktops, 992px and up)*/
+/*Extra large devices (large desktops, 1200px and up)*/
+/** KF3.0 Defined Variables **/
+/** KF3.0 Font sizes **/
+/**kf line-height*/
+/* Spacing units*/
+/*--color--*/
+/*-----------------------------------*/
+.section-visual {
+  margin: 0;
+  padding: 70px 0 50px 0;
+  display: block;
+}
+
+.section-visual .visual-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.section-visual .visual-infograph {
+  width: 750px;
+  padding: 0;
+}
+
+.section-visual .visual-infograph img {
+  -webkit-box-shadow: 19px 34px 48px -3px rgba(247, 223, 245, 0.46);
+          box-shadow: 19px 34px 48px -3px rgba(247, 223, 245, 0.46);
+}
+
+.section-visual .visual-info {
+  display: block;
+  text-align: left;
+  padding: 0px 30px 0px 70px;
+}
+
+.section-visual .visual-info h3 {
+  font-size: 3rem;
+  line-height: 4rem;
+  font-family: "GraphikMedium", Helvetica, sans-serif;
+  font-weight: 500;
+  color: #1d2b36;
+  letter-spacing: -1.08px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1024px) {
+  .section-visual .visual-infograph {
+    width: 560px;
+    padding: 0;
+  }
+  .section-visual .visual-infograph img {
+    width: 100%;
+  }
+  .section-visual .visual-info {
+    width: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-visual {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .section-visual .visual-sec {
+    width: 100%;
+    display: block;
+  }
+  .section-visual .visual-sec .visual-infograph {
+    width: 100%;
+    padding: 0;
+  }
+  .section-visual .visual-sec .visual-infograph img {
+    width: 100%;
+    -webkit-box-shadow: 21px 37px 53px -3px rgba(247, 223, 245, 0.46);
+            box-shadow: 21px 37px 53px -3px rgba(247, 223, 245, 0.46);
+    border: solid 1.6px #d5dce1;
+    border-radius: 6px;
+  }
+  .section-visual .visual-sec .visual-info {
+    padding: 0px 0 40px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .section-visual .visual-sec .visual-info h3 {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-visual {
+    padding: 15px 0;
+  }
+  .section-visual .visual-sec {
+    display: block;
+    padding: 0;
+    margin: 15px auto;
+    width: 90%;
+  }
+  .section-visual .visual-sec .visual-infograph {
+    width: 100%;
+    padding: 0px;
+  }
+  .section-visual .visual-sec .visual-infograph img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 20px 8px rgba(247, 223, 245, 0.46);
+            box-shadow: 0px 0px 20px 8px rgba(247, 223, 245, 0.46);
+  }
+  .section-visual .visual-sec .visual-info {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+  }
+  .section-visual .visual-sec .visual-info h3 {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0px;
+    font-weight: 700;
+  }
+}
+/*# sourceMappingURL=section-visual.css.map */

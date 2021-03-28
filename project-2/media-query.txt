@@ -1,0 +1,6 @@
+$screen-xs: 320px !default;
+$screen-sm: 480px !default;
+$screen-md: 768px !default;
+$screen-lg: 992px !default;
+$screen-xl: 1200px !default;
+$screen-xxl: 1440px !default;

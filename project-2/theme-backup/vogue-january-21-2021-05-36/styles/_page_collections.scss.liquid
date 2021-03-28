@@ -1,0 +1,22 @@
+// Collections
+// ======================================
+
+.collections {
+  @include page-padding;
+
+  .products__search-box {
+    @include screen-lg-min {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+.collections__container {
+  @include make-container;
+}
+
+.collections__heading {
+  @include page-heading;
+}

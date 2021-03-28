@@ -1,0 +1,113 @@
+    .courses-toggle {
+    float: left;
+}
+
+.custom-arrow {
+    color: #1d2b36!important;
+    padding: 0!important;
+    position: relative;
+    white-space: nowrap;
+    display: block;
+    text-decoration: none;
+    &::after {
+        border: 1.5px solid #1d2b36;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        vertical-align: middle;
+        transform: rotate(45deg);
+        position: relative;
+        margin-left: 5px;
+        left: 5px;
+        content: '';
+        top: -3px;
+    }
+    .nav-link {
+        color: #1d2b36 !important;
+        position: relative;
+        display: block;
+        text-decoration: none;
+        font-family: graphik;
+        background: #fff;
+        border: 1px solid #ffffff;
+        padding: 0px 15px !important;
+        border-radius: 4px;
+        text-transform: inherit !important;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center;
+        vertical-align: top;
+        line-height: 38px;
+        height: 38px;
+        box-sizing: border-box;
+    }
+    .navbar-expand-md .navbar-collapse {
+        display: flex;
+        flex-basis: auto;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    .navbar .navbar-nav li {
+        font-size: 18px;
+    }
+    .primary-navbar .nav-link {
+        color: #1d2b36;
+        padding: 0;
+        display: block;
+    }
+    .dropdown-toggle {
+        white-space: nowrap;
+    }
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        float: left;
+        padding: 15px;
+        margin: 0;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgb(213 214 216);
+        border-radius: .25rem;
+        min-width: 250px;
+        box-shadow: 0 5px 30px 0 rgba(147, 161, 176, 0.25);
+    }
+    .mega-dropdown-menu li {
+        font-size: 16px;
+        color: #212529;
+        text-align: left;
+        list-style: none;
+    }
+    .mega-dropdown-menu li a {
+        font-family: GraphikRegular, Helvetica, sans-serif;
+        font-size: 1rem;
+        color: #748494;
+    }
+    .hide-menu .mega-dropdown-menu {
+        display: block;
+    }
+    .show-menu .mega-dropdown-menu {
+        display: block;
+    }
+    .custom-menu a {
+        font-family: graphik;
+        background: #fff;
+        color: #0565ff !important;
+        border: 1px solid #0565ff;
+        padding: 8px 15px;
+        border-radius: 4px;
+        text-transform: inherit !important;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        vertical-align: top;
+        line-height: 38px;
+        height: 38px;
+        box-sizing: border-box;
+    }

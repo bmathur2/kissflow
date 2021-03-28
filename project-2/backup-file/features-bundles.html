@@ -1,0 +1,26 @@
+<section class="features-bundles">
+    <div class="features__container">
+        <div class="features__wrapper">
+            <article class="section__content">
+                {% if section.settings.heading != blank or section.settings.subheading != blank %}
+                <header class="section__headings section__headings">
+                    {% if section.settings.heading != blank %}
+                    <h2 class="section__heading">{{ section.settings.heading }}</h2>
+                    {% endif %} {% if section.settings.subheading != blank %}
+                    <p class="section__subheading section__heading-ornament">{{ section.settings.subheading }}</p>
+                    <p class="section__description section__heading-ornament">{{ section.settings.description }}</p>
+                    <a class="button btn-custom button-{{ block.settings.button_type }}" href="{{ block.settings.button_link }}">{{ block.settings.button_text }}</a> {% endfor %} {% if page.product_is_course %} {% assign course = page.course %} {% if
+                    {% endif %}
+                </header>
+                {% endif %} {% if section.blocks != empty %}
+                <div class="section__button-group btn-custom-box">
+                    {% for block in section.blocks %}
+                    <a class="button btn-custom button-{{ block.settings.button_type }}" href="{{ block.settings.button_link }}">{{ block.settings.button_text }}</a> {% endfor %} {% if page.product_is_course %} {% assign course = page.course %} {% if
+                    course.has_free_trial %}
+                    <a href="{{ course.links.enroll_free_trial }}" class="button{% unless course.user_can_purchase %} button-primary{% else %} button-secondary{% endunless %}">{{ 'liquid.partials.course_landing_page_action_buttons.link_free_trial' | translate }}</a>                    {% endif %} {% endif %}
+                </div>
+                {% else %} {% if section.settings.hide_default_buttons == false %} {% include 'product_action_buttons' %} {% endif %} {% endif %}
+            </article>
+        </div>
+    </div>
+</section>

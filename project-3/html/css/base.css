@@ -1,0 +1,93 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+/*Small devices (landscape phones, 576px and up)*/
+/*Medium devices (tablets, 768px and up)*/
+/*Large devices (desktops, 992px and up)*/
+/*Extra large devices (large desktops, 1200px and up)*/
+/** KF3.0 Defined Variables **/
+/** KF3.0 Font sizes **/
+/**kf line-height*/
+/* Spacing units*/
+/*--color--*/
+/*-----------------------------------*/
+@font-face {
+  font-family: 'GraphikRegular';
+  src: url("../fonts/GraphikRegular.woff") format("woff"), url("../fonts/GraphikRegular.woff2") format("woff2"), url("../fonts/GraphikRegular.svg#GraphikRegular") format("svg"), url("../fonts/GraphikRegular.eot"), url("../fonts/GraphikRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikRegular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GraphikMedium';
+  src: url("../fonts/GraphikMedium.woff") format("woff"), url("../fonts/GraphikMedium.woff2") format("woff2"), url("../fonts/GraphikMedium.svg#GraphikMedium") format("svg"), url("../fonts/GraphikMedium.eot"), url("../fonts/GraphikMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikMedium.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GraphikSemibold';
+  src: url("../fonts/GraphikSemibold.woff") format("woff"), url("../fonts/GraphikSemibold.woff2") format("woff2"), url("../fonts/GraphikSemibold.svg#GraphikSemibold") format("svg"), url("../fonts/GraphikSemibold.eot"), url("../fonts/GraphikSemibold.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikSemibold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #1d2b36;
+  font-size: 16px;
+  font-family: 'GraphikRegular';
+  font-weight: normal;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn-common {
+  padding: 5px 26px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #0565ff;
+  border-color: #0565ff;
+  position: relative;
+  margin: 0px;
+  font-size: 20px;
+  font-family: 'GraphikRegular';
+  font-weight: 400;
+  display: inline-block;
+}
+
+.btn-common:hover {
+  background-color: #0045b2;
+  color: #fff;
+  border-color: #0045b2;
+}
+
+.rel {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .btn-common {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn-common {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=base.css.map */

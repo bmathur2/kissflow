@@ -1,0 +1,109 @@
+.section-visual {
+    margin: 40px 0 0px 0;
+    padding: 40px 0 0px 0;
+    display: block;
+    .visual-infograph {
+        width: 750px;
+        padding: 0;
+        // margin: 120px 51px 72px 113px;
+        img {
+            box-shadow: 19px 34px 48px -3px rgba(247, 223, 245, 0.46);
+        }
+    }
+    .visual-info {
+        display: block;
+        text-align: left;
+        padding: 0px 40px;
+        h3 {
+            font-size: 40px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.45;
+            letter-spacing: -1.08px;
+            font-family: 'GraphikSemibold';
+            font-weight: 700;
+            margin-top: 75px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (min-width: $mdrotate) {
+
+  
+
+}
+@media (min-width: $medium) {
+  
+    .section-visual {
+        margin:20px 0 0px 0;
+        padding:20px 0 0px 0;
+     
+        .visual-infograph {
+            width: 95%;
+            padding: 0;
+            margin: 0 auto;
+            
+            img {
+               width: 100%;
+            }
+        }
+        .visual-info {
+            padding: 0px 40px;
+            text-align: left;
+            h3 {
+                font-size:26px;
+                margin-top:15px;
+                margin-bottom:15px;
+            }
+        }
+    }
+
+  
+}
+
+@media (min-width: $large) {
+ 
+}
+
+@media (min-width: $normal) {
+
+}
+
+@media (min-width: $mediumplus) {
+
+}
+
+@media (min-width: $widescreen) {
+
+}
+
+@media (max-width: $mobile) {
+  
+    .section-visual {
+        margin:20px 0 0px 0;
+        padding:20px 0 0px 0;
+     
+        .visual-infograph {
+            width: 95%;
+            padding: 0;
+            margin: 0 auto;
+            
+            img {
+               width: 100%;
+            }
+        }
+        .visual-info {
+            padding: 0px 40px;
+            text-align: center;
+            h3 {
+                font-size:18px;
+                margin-top:15px;
+                margin-bottom:15px;
+            }
+        }
+    }
+
+  
+}

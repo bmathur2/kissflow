@@ -1,0 +1,85 @@
+// Pricing Table
+// ======================================
+
+.pricing-table {
+
+  &.section__column-layout__two-column {
+    @include screen-lg-min {
+
+      .section__content {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.pricing-table__container {
+  @include make-container;
+}
+
+.pricing-table__wrapper {
+  @include make-row(true);
+}
+
+.pricing-table__list {
+  li {
+    @include screen-sm-min {
+      @include display(flex);
+      @include align-items(flex-start);
+    }
+  }
+}
+
+.pricing-table__list-item {
+  @include justify-content(space-between);
+
+  margin: 0 0 $gutter-width;
+  padding: 0 0 $gutter-width;
+  border-bottom: $interface__border;
+
+  &:last-of-type {
+    margin: 0;
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  .button {
+    @include align-self(center);
+  }
+}
+
+.pricing-table__list-item-details {
+  @include screen-md-max {
+
+    &__name {
+      margin-bottom: $gutter-width;
+    }
+  }
+  @include screen-sm-min {
+    flex: 0 0 60%;
+    align-self: center;
+    max-width: 60%;
+    min-height: 1px;
+    padding: 0;
+  }
+
+  &__price {
+    margin: 0;
+    font-family: $body__font-family;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  &__name {
+    @include screen-sm-min {
+      margin: 0;
+    }
+    @include screen-md-min {
+      font-size: 1.125rem;
+    }
+
+    color: $accent__color;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}

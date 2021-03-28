@@ -1,0 +1,167 @@
+    // Pagination
+    // ======================================
+    .pagination {
+        @include make-row(false);
+        @include screen-md-min {
+            margin: 0 0 $gutter-width;
+        }
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .pagination__pages {
+        list-style: none;
+        li {
+            display: inline-block;
+            &.active {
+                a {
+                    color: $link__color;
+                    &:after {
+                        content: "";
+                    }
+                }
+            }
+        }
+        a {
+            @include screen-md-min {
+                font-size: 0.875rem;
+            }
+            position: relative;
+            color: $link__color--active;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            &:active,
+            &:hover {
+                color: $link__color;
+            }
+        }
+        .fa {
+            @include screen-md-min {
+                font-size: 0.5rem;
+            }
+            margin: 0 5px;
+            font-size: 1rem;
+            font-weight: normal;
+            vertical-align: middle;
+        }
+    }
+    
+    .pagination__page-number {
+        margin: 0 2.5px;
+        &:active,
+        &:hover {
+            &:after {
+                content: "";
+            }
+        }
+        &:after {
+            display: inline-block;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $link__color;
+            content: none;
+            display: none;
+        }
+    }
+    
+    .pagination {
+        display: flex;
+        .pagination__pages {
+            list-style: none;
+            display: flex;
+            li {
+                display: inline-block;
+                text-align: center;
+                position: relative;
+                width: 57px;
+                .pagination-arrows {
+                    width: 57px;
+                    height: 57px;
+                    line-height: 57px;
+                    border-radius: 50%;
+                    border: 1px solid #ddd;
+                    display: block;
+                    margin: 0 auto;
+                    .lft-arrow,
+                    .rft-arrow {
+                        color: #405261;
+                        text-align: center;
+                        display: block;
+                        position: absolute;
+                        width: 13px;
+                        height: 13px;
+                        border-width: 2px 2px 0 0;
+                        border-style: solid;
+                        border-color: #405261;
+                        top: 20px;
+                        left: 24px;
+                    }
+                    .lft-arrow {
+                        transform: rotate(-135deg);
+                        left: 26px;
+                        top: 22px;
+                        @media (max-width: 767px) {
+                            left: 20px;
+                            top: 17px;
+                        }
+                    }
+                    .rft-arrow {
+                        transform: rotate(45deg);
+                        left: 18px;
+                        top: 22px;
+                        @media (max-width: 767px) {
+                            left: 13px;
+                            top: 17px;
+                        }
+                    }
+                    &:hover {
+                        border: 1px solid #1f80ff;
+                        .lft-arrow,
+                        .rft-arrow {
+                            border-color: #1f80ff;
+                        }
+                    }
+                    @media (max-width: 767px) {
+                        width: 47px;
+                        height: 47px;
+                        line-height: 47px;
+                    }
+                }
+                .pagination__page-number {
+                    position: relative;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: bold;
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 20px;
+                    text-align: center;
+                    color: #405261;
+                    width: 57px;
+                    height: 57px;
+                    line-height: 57px;
+                    &:hover {
+                        color: #0055DE;
+                    }
+                }
+                &.active {
+                    color: #0055DE;
+                    .pagination__page-number {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 57px;
+                        text-align: center;
+                        color: #0055DE;
+                    }
+                }
+            }
+        }
+    }
+    
+    ` page_sign_in_out.scss

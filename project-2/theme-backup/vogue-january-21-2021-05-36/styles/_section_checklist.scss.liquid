@@ -1,0 +1,93 @@
+// Checklist
+// ======================================
+
+.checklist {
+
+  &.section__column-layout__two-column {
+    @include screen-lg-min {
+
+      .checklist__list-item {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .section__subheading {
+    font-size: modular-scale(0);
+    line-height: 2;
+  }
+}
+
+.checklist__container {
+  @include make-container;
+}
+
+.checklist__wrapper {
+  @include make-row(true);
+}
+
+.checklist__list {
+  @include make-row(false);
+}
+
+.checklist__list-item {
+  @include screen-sm-min {
+
+    &:last-child {
+      p {
+        border-bottom: 0;
+      }
+    }
+  }
+  @include screen-sm-max {
+
+    &:last-child {
+      p {
+        border-bottom: 0;
+      }
+    }
+  }
+  @include make-col(12, false);
+  @include display(flex);
+  @include align-items(center);
+
+  padding-top: $gutter-width;
+  padding-bottom: $gutter-width;
+  border-bottom: $interface__border;
+
+  p {
+    @include screen-lg-min {
+      font-size: 1.25rem;
+    }
+
+    margin: 0;
+    font-family: $body__font-family;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .fa {
+    @include screen-lg-min {
+      width: 3rem;
+      height: 3rem;
+      font-size: 1.5em;
+      line-height: 2em;
+    }
+
+    @include flex(0 0 auto);
+    @include align-self(center);
+
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 $gutter-width / 2 0 0;
+    float: left;
+    border-radius: 50%;
+    background-color: $accent__color;
+    color: dynamic-contrast-color($accent__color);
+    font-size: 1em;
+    line-height: 2.5em;
+    text-align: center;
+  }
+}

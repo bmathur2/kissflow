@@ -1,0 +1,129 @@
+section.two-column-dotted-pattern {
+  background: $ash100;
+  .twocolumn-content-hold {
+    h2 {
+      margin-bottom: $kf_pound;
+    }
+  }
+
+  .grey-dots-pattern {
+    position: absolute;
+    z-index: 0;
+  }
+}
+
+@media (min-width: $medium) {
+  section.two-column-dotted-pattern {
+    padding: $kf_hundred 0;
+    .grey-dots-pattern {
+      background: url(/wp-content/themes/kissflow_website/assets/images/large-grey-left-dots.svg)
+        no-repeat;
+      height: 60%;
+      width: 100%;
+      top: 35%;
+      left: 0;
+    }
+    .twocolumn-content-hold {
+      h2 {
+        font-size: 40px;
+      }
+    }
+    .twocolumn-image-wrap {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $large) {
+  section.two-column-dotted-pattern {
+    padding: $kf_tonne 0;
+    .grey-dots-pattern {
+      top: 0;
+      left: 0;
+      height: 90%;
+    }
+    .twocolumn-content-hold {
+      h2 {
+        font-size: 44px;
+      }
+    }
+    .twocolumn-content-hold {
+      z-index: 0;
+      position: relative;
+      h2 {
+        &:before {
+          content: "";
+          background: url(/wp-content/themes/kissflow_website/assets/images/grey-dots-right.svg)
+            no-repeat;
+          position: absolute;
+          z-index: -1;
+          height: 180px;
+          width: 218px;
+          right: -6%;
+          top: -10%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $normal) {
+  section.two-column-dotted-pattern {
+    padding: $kf_tonne 0 0 $kf_tonne;
+    .grey-dots-pattern {
+      top: -9%;
+      height: 100%;
+    }
+    .twocolumn-content-hold {
+      h2 {
+        font-size: 48px;
+      }
+      h5 {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: $mediumplus) {
+  section.two-column-dotted-pattern {
+    .twocolumn-content-hold {
+      h2 {
+        &:before {
+          height: 190px;
+          right: 0%;
+          top: -10%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  section.two-column-dotted-pattern {
+    padding: $kf_hundred 0;
+    .grey-dots-pattern {
+      background: url(/wp-content/themes/kissflow_website/assets/images/mobile-dots-collaboration.svg)
+        no-repeat;
+      height: 33%;
+      width: 32%;
+      bottom: 0;
+      left: 3%;
+    }
+    .twocolumn-content-hold {
+      h2 {
+        font-family: $primarymedium;
+        font-size: 24px;
+        line-height: 36px;
+        max-width: 80%;
+        margin: 0 auto $kf_pound;
+      }
+      h5 {
+        font-size: 16px;
+      }
+    }
+    .twocolumn-image-wrap {
+      margin: $kf_pound auto 0px;
+    }
+  }
+}

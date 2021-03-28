@@ -1,0 +1,65 @@
+<section class="student-certificate" data-preview-item="student-certificate">
+  <div class="student-certificate__container">
+    {% if page.expired %}
+      <div class="student-certificate__expired">
+        <span class="student-certificate__expired__hr"></span>
+        <div class="student-certificate__expired__label__container">
+          <i class="toga-icon toga-icon-warning" aria-hidden="true"></i>
+          <span class="student-certificate__expired__label">{{ 'liquid.partials.student_certificate.certificate_expired' | translate }}</span>
+        </div>
+        <span class="student-certificate__expired__hr"></span>
+      </div>
+    {% endif %}
+
+    <div style="display:flex"><div class="student-certificate__image" style="border:1px solid #000;padding:0px;max-height:470px;overflow:hidden;height:470px;box-shadow: 0px 10px 35px #F1F3F5;">
+      <img src="{{ page.credential_image_url }}" alt="Certificate" class="img-responsive {% if page.expired %}faded{% endif %}" loading="lazy" />
+    </div>
+    
+    <div class="student-certificate__share">
+    	
+      {% if page.is_preview %}
+        
+        <button class="button button-secondary">{{ 'liquid.partials.student_certificate.download_pdf' | translate }}</button>
+        <button class="button button-secondary">{{ 'liquid.partials.student_certificate.copy_link' | translate }}</button>
+        <label class="share-social">Share:</label>
+        <div class="addthis_inline_share_toolbox"></div>   
+      {% else %}
+        {% if page.is_certificate_owner %}
+          <div class="addthis_inline_share_toolbox"></div>
+        {% endif %}
+		<button class="button button-secondary" id="download-pdf" data-pdf-url="{{page.pdf_path}}">{{ 'liquid.partials.student_certificate.download_pdf' | translate }}</button>
+        <button class="button button-secondary" id="copy-link">{{ 'liquid.partials.student_certificate.copy_link' | translate }}</button>
+      {% endif %}
+    </div>
+    </div>
+    
+    <div class="student-certificate__data" style="display:inline-block;">
+      <div class="student-certificate__data__container">
+        <span class="student-certificate__data__label">{{ 'liquid.partials.student_certificate.student' | translate }}: </span>
+        <span class="student-certificate__data__value">{{page.student_name}}</span>
+      </div>
+      <div class="student-certificate__data__container">
+        <span class="student-certificate__data__label">{{ 'liquid.partials.student_certificate.school' | translate }}: </span>
+        <span class="student-certificate__data__value">{{page.school}}</span>
+      </div>
+      <div class="student-certificate__data__container">
+        <span class="student-certificate__data__label">{{ 'liquid.partials.student_certificate.course' | translate }}: </span>
+        <span class="student-certificate__data__value">{{page.course}}</span>
+      </div>
+      <div class="student-certificate__data__container">
+        <span class="student-certificate__data__label">{{ 'liquid.partials.student_certificate.certificate_id' | translate }}: </span>
+        <span class="student-certificate__data__value">{{page.certificate_id}}</span>
+      </div>
+      <div class="student-certificate__data__container">
+        <span class="student-certificate__data__label">{{ 'liquid.partials.student_certificate.issued' | translate }}: </span>
+        <span class="student-certificate__data__value">{{page.issue_date}}</span>
+      </div>
+      <div class="student-certificate__data__container">
+        <span class="student-certificate__data__label">{{ 'liquid.partials.student_certificate.expires' | translate }}: </span>
+        <span class="student-certificate__data__value">{{page.expiry_date}}</span>
+      </div>
+    </div>
+    
+    
+  </div>
+</section>

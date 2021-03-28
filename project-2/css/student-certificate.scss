@@ -1,0 +1,30 @@
+.student-certificate__share {
+    display: inline-block;
+    #download-pdf {
+        padding: 4px 20px;
+        background: #0055DE;
+        border-radius: 2px;
+        text-transform: capitalize;
+        color: #fff;
+    }
+    #copy-link {
+        padding: 4px 0px;
+        background: #fff;
+        border: 1px solid #0055DE;
+        border-radius: 2px;
+        color: #0055DE;
+        text-transform: capitalize;
+        min-width: 182px;
+    }
+}
+
+.student-certificate__data {
+    display: flex;
+}
+
+.student-info-lft {
+    display: inline-block;
+    float: left;
+    width: 75%;
+    .student-certificate__data__container {}
+}

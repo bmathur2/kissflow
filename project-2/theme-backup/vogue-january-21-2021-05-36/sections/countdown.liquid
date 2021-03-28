@@ -1,0 +1,213 @@
+<section class="countdown section-height__medium
+{% include 'section_utility_column_layout' %}" data-preview-item="countdown">
+  <div class="countdown__container">
+    <div class="countdown__wrapper">
+      {% if section.settings.heading != blank or section.settings.subheading != blank %}
+        <header class="section__headings">
+          {% if section.settings.heading != blank %}
+            <h2 class="section__heading">{{ section.settings.heading }}</h2>
+          {% endif %}
+          {% if section.settings.subheading != blank %}
+            <p class="section__subheading">{{ section.settings.subheading }}</p>
+          {% endif %}
+          {% if section.settings.button_text != blank %}
+            <div class="section__button-group">
+              <a class="button button-{{ section.settings.button_type }}" href="{{ section.settings.button_link }}">{{ section.settings.button_text }}</a>
+            </div>
+          {% endif %}
+        </header>
+      {% endif %}
+      <div class="section__content section__body" role="timer" aria-atomic="true">
+        <ul class="countdown-clock" data-deadline="{{ section.settings.expiry_date }}">
+          <li class="clock-days clock-interval"><span class="chrono">00</span><strong>{{ 'liquid.partials.countdown.days' | translate }}</strong></li>
+          <li class="clock-hours clock-interval"><span class="chrono">00</span><strong>{{ 'liquid.partials.countdown.hours' | translate }}</strong></li>
+          <li class="clock-minutes clock-interval"><span class="chrono">00</span><strong>{{ 'liquid.partials.countdown.minutes' | translate }}</strong></li>
+          <li class="clock-seconds clock-interval"><span class="chrono">00</span><strong>{{ 'liquid.partials.countdown.seconds' | translate }}</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+$(document).ready(function() {
+  var dueDate = $('.countdown-clock');
+
+  if (dueDate) {
+    var deadline = dueDate.attr('data-deadline');
+    function getTimeRemaining(endtime) {
+      var t = Date.parse(endtime) - Date.parse(new Date().toISOString());
+      var negativeDate = t < 0;
+      var seconds = negativeDate ? 0 : Math.floor((t / 1000) % 60);
+      var minutes = negativeDate ? 0 : Math.floor((t / 1000 / 60) % 60);
+      var hours = negativeDate ? 0 : Math.floor((t / (1000 * 60 * 60)) % 24);
+      var days = negativeDate ? 0 : Math.floor(t / (1000 * 60 * 60 * 24));
+      return {
+        'total': t,
+        'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+      };
+    }
+    function initializeClock(id, endtime) {
+      var clock = $(id);
+      var daysSpan = clock.find('.clock-days .chrono');
+      var hoursSpan = clock.find('.clock-hours .chrono');
+      var minutesSpan = clock.find('.clock-minutes .chrono');
+      var secondsSpan = clock.find('.clock-seconds .chrono');
+      function updateClock() {
+        var t = getTimeRemaining(endtime);
+        daysSpan.html(t.days);
+        hoursSpan.html(('0' + t.hours).slice(-2));
+        minutesSpan.html(('0' + t.minutes).slice(-2));
+        secondsSpan.html(('0' + t.seconds).slice(-2));
+        if (t.total <= 0) {
+          clearInterval(timeinterval);
+        }
+      }
+      updateClock();
+      var timeinterval = setInterval(updateClock, 1000);
+    }
+    initializeClock(dueDate, deadline);
+  }
+});
+</script>
+
+{% style %}
+
+.countdown {
+  {% include 'section_style_background_color' %}
+  {% include 'section_style_column_layout' %}
+  {% include 'section_style_heading_ornament' %}
+
+  {% if section.settings.section_padding_top %}
+    .countdown__container {
+      padding-top: 0;
+    }
+  {% endif %}
+
+  {% if section.settings.section_padding_bottom %}
+    .countdown__container {
+      padding-bottom: 0;
+    }
+  {% endif %}
+}
+
+{% endstyle %}
+
+{% schema %}
+{
+  "label":"Countdown timer",
+  "settings":[
+    {
+      "type":"datetime",
+      "id":"expiry_date",
+      "label":"Expiry date and time (UTC)",
+      "default":"2018-12-31T18:00:00.000Z"
+    },
+    {
+      "label":"Headings",
+      "settings":[
+        {
+          "type":"text",
+          "id":"heading",
+          "label":"Heading",
+          "default":"Countdown timer"
+        },
+        {
+          "type":"text",
+          "id":"subheading",
+          "label":"Subheading",
+          "default":"Use this section to create urgency for your offer."
+        }
+      ]
+    },
+    {
+      "label":"Button",
+      "settings":[
+        {
+          "type":"page_picker",
+          "id":"button_link",
+          "label":"Link to",
+          "default":""
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "Call to action"
+        },
+        {
+          "type":"radio",
+          "id":"button_type",
+          "label":"Button style",
+          "description":"",
+          "default":"primary",
+          "options":[
+            {
+              "value":"primary",
+              "label":"Primary"
+            },
+            {
+              "value":"secondary",
+              "label":"Secondary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label":"Background & layout",
+      "settings":[
+        {
+          "type":"select",
+          "id":"background_color",
+          "label":"Background color",
+          "description":"",
+          "default":"background_2",
+          "options":[
+            {
+              "value":"background_1",
+              "label":"Primary"
+            },
+            {
+              "value":"background_2",
+              "label":"Secondary"
+            }
+          ]
+        },
+        {
+          "type":"checkbox",
+          "id":"section_padding_top",
+          "label":"Remove top section padding",
+          "default":false
+        },
+        {
+          "type":"checkbox",
+          "id":"section_padding_bottom",
+          "label":"Remove bottom section padding",
+          "default":false
+        },
+        {
+          "type":"radio",
+          "id":"column_layout",
+          "label":"Column layout",
+          "description":"",
+          "default":"two-column",
+          "options":[
+            {
+              "value":"one-column",
+              "label":"One Column"
+            },
+            {
+              "value":"two-column",
+              "label":"Two Columns"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

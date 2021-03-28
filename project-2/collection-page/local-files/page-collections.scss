@@ -1,0 +1,120 @@
+// Collections
+// ======================================
+.collections {
+    @include page-padding;
+    .common-heading-box {
+        display: block;
+        .common-heading {
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-size: 60px;
+            font-weight: 600;
+            line-height: 66px;
+            letter-spacing: -1.899999976158142px;
+            text-align: left;
+            position: relative;
+            color: #1D2B36;
+        }
+        .common-sub-heading {
+            color: #405261 !important;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 22px;
+            text-align: left;
+            letter-spacing: -0.20000000298023224px;
+        }
+    }
+    .collections__heading {
+        line-height: normal;
+        margin: 0px;
+        padding: 0px;
+    }
+    .products__search {
+        margin: 3rem 0 2rem 0;
+        .products__search-form {
+            position: relative;
+            .products__search-box {
+                @include screen-lg-min {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+                .form__search {
+                    display: block;
+                    position: relative;
+                    background: #f1f3f5;
+                    height: 50px;
+                    width: 100%;
+                    border-radius: 4px;
+                    color: #1D2B36;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    overflow: hidden;
+                    .form__control {
+                        background: #f1f3f5;
+                        color: #1D2B36 !important;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+            .products__collections-list {
+                display: flex;
+                .products__collections-list-item {
+                    display: inline-block;
+                    a {
+                        color: #405261;
+                        font-style: normal;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 20px;
+                        position: relative;
+                        &:after {
+                            display: inline-block;
+                            position: absolute;
+                            bottom: -10px;
+                            left: 0;
+                            height: 2px;
+                            width: 100%;
+                            background: #fff;
+                            content: '';
+                        }
+                    }
+                    .active {
+                        color: #0055DE;
+                        &:after {
+                            display: inline-block;
+                            position: absolute;
+                            bottom: -10px;
+                            left: 0;
+                            height: 2px;
+                            width: 100%;
+                            background: #0055DE;
+                            content: '';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.collections__container {
+    @include make-container;
+}
+
+.collections__heading {
+    @include page-heading;
+}
+
+.rel {
+    position: relative;
+}
+
+.align-left {
+    text-align: left;
+}

@@ -1,0 +1,65 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+$xtrasmall: 575.98px;
+/*Small devices (landscape phones, 576px and up)*/
+$small: 576px;
+/*Medium devices (tablets, 768px and up)*/
+$medium: 768px;
+/*Large devices (desktops, 992px and up)*/
+$large: 992px;
+/*Extra large devices (large desktops, 1200px and up)*/
+$xtralarge: 1200px;
+$mdrotate: 1024px;
+$normal: 1360px;
+$imac: 1400px;
+$mobile: 767px;
+$mediumplus: 1600px;
+$widescreen: 1920px;
+
+
+/** KF3.0 Defined Variables **/
+
+/** KF3.0 Font sizes **/
+$h1font: 6rem;
+$h2font: 4.8rem;
+$h2afont: 4rem;
+$h3font: 3.2rem;
+$h4font: 2.4rem;
+$h5font: 2rem;
+$h5afont: 1.8rem;
+$h6font: 1.6rem;
+$mainfont: 1.4rem;
+$smallfont: 1.2rem;
+$tinyfont: 1rem;
+
+/**kf line-height*/
+$h1fontlh: 8rem;
+$h2fontlh: 6.4rem;
+$h2afontlh: 5.8rem;
+$h3fontlh: 5.4rem;
+$h4fontlh: 4.2rem;
+$h5fontlh: 3.2rem;
+$h6fontlh: 2.6rem;
+$mainfontlh: 2.8rem;
+$smallfontlh: 2.4rem;
+$tinyfontlh: 2rem;
+/* Spacing units*/
+
+$kf_feet: 0.4rem;
+$kf_grams: 0.8rem;
+$kf_kilo: 1.2rem;
+$kf_grain: 1.6rem;
+$kf_dram: 2rem;
+$kf_ounce: 2.4rem;
+$kf_pound: 3.2rem;
+$kf_hundred: 4rem;
+$kf_ton: 4.8rem;
+$kf_tonne: 6rem;
+$kf_slug: 7.2rem;
+$kf_pond: 9.6rem;
+$kf_kilopond: 12rem;
+$kf_megapond: 16rem;
+
+$primaryfont: "GraphikRegular", Helvetica, sans-serif;
+$primarymedium: "GraphikMedium", Helvetica, sans-serif;
+$primarybold: "GraphikBold", Helvetica, sans-serif;
+$primarysemi: "GraphikSemibold", Helvetica, sans-serif;

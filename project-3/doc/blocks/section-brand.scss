@@ -1,0 +1,114 @@
+.section-brand {
+    border-top: 1px solid #d5dce1;
+    padding: 0;
+    border-bottom: 1px solid #d5dce1;
+    .brand-logo {
+        display: flex;
+        align-items: center;
+        padding: 40px 20px;
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            li {
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+                display: block;
+                img {
+                    width: 180px;
+                    height: 48px;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $mdrotate) {
+ .section-brand {
+        padding: 20px 0;
+       .brand-logo {
+       
+         ul {
+           
+            li {
+                
+                img {
+                    width: 140px;
+                    height: 36px;
+
+                }
+            }
+        }
+        }
+    }
+
+}
+@media (min-width: $medium) {
+    .section-brand {
+        padding: 20px 0;
+       .brand-logo {
+        width:100%;
+        margin: 0 auto;
+        padding: 0px;
+        text-align: center;
+         ul {
+            display: block;
+            li {
+                text-align: center;
+               
+                display: inline-block;
+                img {
+                    margin: 0 auto;
+                }
+            }
+        }
+        }
+    }
+
+}
+
+@media (min-width: $large) {
+ 
+}
+
+@media (min-width: $normal) {
+
+}
+
+@media (min-width: $mediumplus) {
+
+}
+
+@media (min-width: $widescreen) {
+
+}
+
+@media (max-width: $mobile) {
+  
+    .section-brand {
+        padding: 20px 0;
+       .brand-logo {
+        width:100%;
+        margin: 0 auto;
+        padding: 0px;
+         ul {
+            display: block;
+            li {
+                text-align: center;
+                width: 48%;
+                display: inline-block;
+                img {
+                    margin: 0 auto;
+                }
+            }
+        }
+        }
+    }
+
+    
+}

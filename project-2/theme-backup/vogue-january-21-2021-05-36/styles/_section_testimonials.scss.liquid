@@ -1,0 +1,144 @@
+// Testimonials
+// ======================================
+
+.testimonials {
+  overflow: hidden;
+
+  .section__headings {
+    position: relative;
+    z-index: 1;
+
+    .section__heading,
+    .section__subheading {
+      @include screen-sm-max {
+        text-align: center;
+      }
+    }
+  }
+
+  .section__heading-ornament {
+
+    &:before {
+      @include screen-sm-max {
+        @include transform(translatex(-50%));
+
+        left: 50%;
+      }
+    }
+  }
+}
+
+.testimonials__container {
+  @include make-container;
+  @include section-background-decoration(right);
+}
+
+.testimonials__list {
+  &.owl-carousel {
+    .owl-stage-outer {
+      overflow: visible;
+    }
+
+    .owl-item {
+      @include screen-sm-max {
+        opacity: 0;
+      }
+      @include screen-md-min {
+        padding-right: $gutter-width * 1.5;
+      }
+
+      &.active {
+        @include screen-sm-max {
+          padding: 0 $gutter-width / 2;
+          opacity: 1;
+        }
+
+        & + .owl-item {
+          @include screen-sm-min {
+            opacity: 0.7;
+          }
+          opacity: 0;
+        }
+      }
+    }
+
+    .owl-nav {
+      top: 40%;
+
+      .owl-prev {
+        @include screen-md-min {
+          left: -2.5rem;
+        }
+      }
+
+      .owl-next {
+        @include screen-md-min {
+          @include transform(translatex(-94%));
+          left: 94%;
+        }
+        @include screen-lg-min {
+          @include transform(translatex(-87.5%));
+          left: 63.5%;
+        }
+      }
+    }
+  }
+}
+
+.testimonials__list-item {
+  @include display(flex);
+  @include flex-direction(column);
+  @include screen-md-min {
+    padding: $gutter-width * 1.5 $gutter-width * 1.75;
+  }
+
+  position: relative;
+  height: 100%;
+  padding: $gutter-width $gutter-width / 2 $gutter-width;
+  border: $interface__border;
+  background-color: $interface__background-color;
+
+  img {
+    height: 32px;
+    margin: 0 $gutter-width / 2 0 0;
+    border-radius: 50%;
+    overflow: hidden;
+    vertical-align: middle;
+
+    .owl-carousel .owl-item & {
+      display: inline-block;
+      width: 32px;
+    }
+  }
+
+  p {
+    @include screen-md-min {
+      font-size: 1.25rem;
+    }
+
+    margin: 0 0 $gutter-width / 1.5;
+    padding: 0 0 $gutter-width;
+    border-bottom: $interface__border;
+    font-size: 1rem;
+  }
+
+  span {
+    font-size: modular-scale(0);
+    font-weight: 400;
+  }
+
+  .fa {
+    display: inline-block;
+    position: absolute;
+    top: $gutter-width / -1.5;
+    width: 42px;
+    height: 42px;
+    margin: 0 $gutter-width / 2 0 0;
+    border-radius: 50%;
+    background-color: $accent__color;
+    color: dynamic-contrast-color($accent__color);
+    font-size: modular-scale(0);
+    line-height: 42px;
+    text-align: center;
+  }
+}

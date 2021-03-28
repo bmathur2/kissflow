@@ -1,0 +1,111 @@
+// Countdown Timer
+// ======================================
+
+.countdown {
+
+  &.section__column-layout__one-column {
+
+    .section__headings,
+    .section__body {
+      text-align: center;
+    }
+
+    .section__headings {
+      margin: 0 0 $gutter-width * 4;
+    }
+  }
+
+  &.section__column-layout__two-column {
+
+    .section__headings {
+      @include screen-lg-min {
+        text-align: left;
+      }
+
+      margin: 0 0 $gutter-width * 1.5;
+      text-align: center;
+    }
+
+    .section__button-group {
+      @include screen-md-max {
+        @include justify-content(center);
+      }
+    }
+  }
+
+  .section__subheading {
+    font-size: modular-scale(0);
+    font-weight: bold;
+  }
+
+  .section__button-group {
+    @include button-group;
+
+    padding-top: $gutter-width;
+  }
+
+  ul {
+    margin-left: 0;
+  }
+}
+
+.countdown__container {
+  @include make-container;
+}
+
+.countdown__wrapper {
+  @include make-row(true);
+  @include align-items(center);
+}
+
+.countdown-clock {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  font-size: 0;
+  list-style: none;
+  text-align: center;
+
+  li {
+    @include screen-sm-max {
+      width: 25%;
+    }
+    @include screen-sm-min {
+      font-size: 3rem;
+    }
+    @include screen-md-min {
+      min-width: 110px;
+    }
+    @include screen-xl-min {
+      font-size: 4rem;
+    }
+
+    display: inline-block;
+    min-width: 25%;
+    padding: 1.75rem 1rem;
+    border: $interface__border;
+    background: $interface__background-color;
+    color: $heading__color;
+    font-family: $heading__font-family;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1;
+    text-align: center;
+    word-break: normal;
+
+    &:not(:first-child) {
+      border-left: 0;
+    }
+
+    strong {
+      @include screen-md-min {
+        font-size: 1rem;
+      }
+      display: block;
+      padding: 5px 0 0;
+      font-family: $body__font-family;
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+  }
+}

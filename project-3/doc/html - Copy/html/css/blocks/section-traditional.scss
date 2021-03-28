@@ -1,0 +1,146 @@
+.section-traditional{
+    position: relative;
+    padding-bottom: 40px;
+    .pink-shadow {
+        background: url(../images/pink-shadow.png) top left no-repeat;
+        width: 520px;
+        height: 372px;
+        background-size: 100%;
+        position: absolute;
+        top: 0px;
+        left: -120px;
+        opacity: 0.5;
+    }
+    &::before {
+        position: absolute;
+        background: url(../images/yellow-dotted.svg) top center no-repeat;
+        width: 100%;
+        height: 80px;
+        display: block;
+        content: "";
+        margin: 0 auto;
+        text-align: center;
+        top: -24px;
+    }
+    .bpm-heading {
+        display: block;
+        h3 {
+            font-size: 40px;
+            line-height: 50px;
+            margin: 0px auto;
+            font-family: 'GraphikRegular';
+            font-weight: 600;
+            text-align: center;
+            padding: 40px 0;
+        }
+    }
+    .traditional-bpm-software {
+        margin: 0 auto;
+        padding: 12px;
+        border-radius: 10px;
+        box-shadow: 0 5px 30px 0 rgba(247, 223, 245, 0.65);
+        background: #fff;
+        max-width: 458px;
+        width: 100%;
+        height: auto;
+        min-height: 476px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        &::before {
+            position: absolute;
+            background: url(../images/pink-dotted.svg) top right no-repeat;
+            width: 80px;
+            height: 180px;
+            display: block;
+            content: "";
+            margin: 0 auto;
+            text-align: center;
+            top: 30%;
+            left: -60px;
+            z-index: 0;
+        }
+        .traditional-bpm-soft-heading {
+            width: 100%;
+            margin: 0 auto;
+            font-family: 'GraphikMedium';
+            font-size: 24px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.08;
+            letter-spacing: -0.6px;
+            color: #405261;
+            padding: 15px 0;
+        }
+        .traditional-bpm-software-img {
+            display: block;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .vs {
+        width: 64px;
+        height: 64px;
+        margin: 188px 20px;
+        padding: 0px 16px;
+        background: #cc4e00;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 64px;
+    }
+    .bpm-software-point {
+        max-width: 458px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 12px;
+        border-radius: 10px;
+        box-shadow: 0 5px 30px 0 rgba(147, 161, 176, 0.2);
+        background-color: #09366d;
+        min-height: 476px;
+        .bpm-kissflow-logo {
+            width: 100%;
+            height: auto;
+            margin: 0px;
+            padding: 15px 30px;
+            border-radius: 5px;
+            background-color: #052955;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 30px;
+            li {
+                color: #fff;
+                position: relative;
+                padding-left: 31px;
+                font-size: 18px;
+                font-family: 'GraphikMedium';
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.78;
+                letter-spacing: -0.18px;
+                margin-bottom: 28px;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0px;
+                    background: url(../images/green-bullet.png) left center no-repeat;
+                    width: 21px;
+                    height: 21px;
+                    display: block;
+                }
+            }
+        }
+    }
+}
